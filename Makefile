@@ -16,7 +16,7 @@ LIBUSB_CONFIG   = libusb-config
 # Make sure that libusb-config is in the search path or specify a full path.
 # On Windows, there is no libusb-config and you must configure the options
 # below manually. See examples.
-CFLAGS          = `$(LIBUSB_CONFIG) --cflags` -O -Wall
+CFLAGS          = `$(LIBUSB_CONFIG) --cflags` -O -Wall -g
 #CFLAGS          = -I/usr/local/libusb/include
 # On Windows replace `$(LIBUSB_CONFIG) --cflags` with appropriate "-I..."
 # option to ensure that usb.h is found
