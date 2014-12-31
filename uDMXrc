@@ -1,0 +1,42 @@
+#
+# sample .uDRCrc file
+#
+# Syntax:
+# channel <channel-alias> <channel-number>
+# values <value-alias> <value> [value] [value] [value] [value]
+#
+# - Aliases can not contain spaces
+# - Channel-number from 1 to 512
+# - Values from 0 to 255
+#
+
+# 3-channel relay
+channel relay 9
+channel relay1 9
+channel relay2 9
+channel relay3 9
+value r-off 0
+value r-on 255
+value r-alloff 0 0 0
+value r-allon 0 0 0
+
+# 3-channel rgb par
+channel par 17
+values p-red 255 0 0
+values p-green 0 255 0
+values p-blue 0 0 255
+values p-cyan 0 255 255
+values p-yellow 255 255 0
+values p-pink 255 0 255
+values p-white 255 255 255
+values p-g10 13 13 13
+values p-g50 127 127 127
+
+# 6-channel magic ball
+channel ball 1
+values b-red   0 255 0 0 128 0
+values b-green 0 0 255 0 128 0
+values b-blue  0 0 0 255 128 0
+values b-all   0 255 255 255 127 0
+values b-off   0 0 0 0 127 0
+
